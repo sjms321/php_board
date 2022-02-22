@@ -7,9 +7,8 @@
 
 
     $sql = "SELECT name,age FROM member";
-
-    $result = mysqli_query($mysqli,$sql);
-
+    $result = mysqli_query($mysqli, $sql);
+  
     if (mysqli_num_rows($result) > 0) {
         while($row = mysqli_fetch_assoc($result)) {
         echo "아이디: " . $row["name"]. " 나이:" . $row["age"]. "<br>";

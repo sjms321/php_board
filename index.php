@@ -6,12 +6,15 @@
 </head>
 <body>
 <a href="/db.php">HTML 링크</a>
-<div id="like_button_container"></div>
-<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<div>
+  <form action="member_input.php" method="POST">
+  <p><input type="text" name="name" ></p>
+  <p><input type="text" name="password" ></p>
+  <p><input type="number" name="age" ></p>
+  <button>ADD</button>
+</form>
+</div>
 
-  <!-- 만든 React 컴포넌트를 실행. -->
-  <script src="like_button.js"></script>
 
 </body>
 </html>
